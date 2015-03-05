@@ -5,7 +5,8 @@ body {
   font-family: "Open Sans", "Segoe UI", arial, helvetica;
 }
 .menu {
-  background-color: #1570a6;
+  //background-color: #1570a6;
+  background-color: #2368E4;
   color: white;
   overflow-x: hidden;
 }
