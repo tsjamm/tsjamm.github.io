@@ -39,6 +39,7 @@ body {
 .menu .info h2,
 .menu .links h2 {
   margin: 0px;
+  font-family:Raleway;
 }
 .menu .info a,
 .menu .links a {
@@ -66,6 +67,11 @@ body {
     left: 300px;
   }
 }
+
+.main .header {
+  font-family:Raleway;
+}
+
 .main .content {
   width: 50%;
   margin: 0 auto;
