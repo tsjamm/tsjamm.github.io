@@ -1,0 +1,87 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: "Open Sans", "Segoe UI", arial, helvetica;
+}
+.menu {
+  /*background-color: #1570a6;*/
+  background-color: #2368E4;
+  color: white;
+  overflow-x: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .menu {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .menu {
+    text-align: center;
+  }
+}
+.menu .logo {
+  padding: 20px;
+}
+.menu .logo a img {
+  width: 100%;
+  max-width: 260px;
+}
+.menu .info,
+.menu .links {
+  padding: 20px;
+}
+.menu .info h2,
+.menu .links h2 {
+  margin: 0px;
+  font-family:Raleway;
+}
+.menu .info a,
+.menu .links a {
+  color: #ccc;
+  font-weight: bold;
+  text-decoration: none;
+}
+.menu .info a:hover,
+.menu .links a:hover {
+  text-decoration: underline;
+}
+.main {
+  background-color: #f7f7f7;
+  color: #444;
+  text-align: center;
+  overflow-x: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .main {
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    left: 300px;
+  }
+}
+
+.main .header {
+  font-family:Raleway;
+}
+
+.main .content {
+  width: 50%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  .main .content {
+    width: 90%;
+  }
+}
+.main .content img {
+  width: 100%;
+  height: 100%;
+}
