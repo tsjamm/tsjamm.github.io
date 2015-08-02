@@ -209,6 +209,7 @@ body .body-wrapper .responsive-card .card-info .card-info-header ul li.absolute-
   right: 3px;
 }
 body .body-wrapper .responsive-card .card-info .card-info-header ul li button {
+  cursor: pointer;
   display: inline-block;
   width: 95%;
   height: 50px;
@@ -249,4 +250,71 @@ body .body-wrapper .responsive-card .card-info .card-info-section-wrapper .card-
 }
 body .body-wrapper .responsive-card .card-info .card-info-section-wrapper .card-info-section.current-section {
   display: block;
+}
+body .body-wrapper .responsive-card .card-info .card-info-section-wrapper .card-info-section .blog-iframe {
+  border: none;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 200%;
+  width: 200%;
+  -moz-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  -o-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -moz-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+}
+body .body-wrapper .responsive-card .card-info .card-info-section-wrapper #cardSection1 {
+  color: white;
+  font-family: "Raleway";
+}
+body .body-wrapper .responsive-card .card-info .card-info-section-wrapper #cardSection1 a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+body .body-wrapper .responsive-card .card-info .card-info-section-wrapper #cardSection1 a:hover {
+  text-decoration: underline;
+}
+body .body-wrapper .responsive-card .card-info .card-info-section-wrapper #cardSection1 .quote {
+  font-size: 28px;
+  display: block;
+  padding: 30px;
+  text-align: center;
+}
+body .body-wrapper .responsive-card .card-info .card-info-section-wrapper #cardSection1 .quote .small {
+  font-size: 14px;
+  font-family: "Open Sans";
+}
+body .body-wrapper .responsive-card .card-info .card-info-section-wrapper #cardSection1 .quote .big {
+  font-size: 20px;
+  font-family: "Raleway";
+}
+body .body-wrapper .responsive-card .card-info .card-info-section-wrapper #cardSection1 .job {
+  display: block;
+  padding: 10px 30px;
+  font-size: 14px;
+  text-align: center;
+}
+body .body-wrapper .responsive-card .card-info .card-info-section-wrapper #cardSection1 .study {
+  display: block;
+  padding: 10px 30px;
+  font-size: 14px;
+  text-align: center;
+}
+body .body-wrapper .responsive-card .card-info .card-info-section-wrapper #cardSection1 .hobby {
+  display: block;
+  padding: 10px 30px;
+  font-size: 14px;
+  text-align: center;
+}
+body .body-wrapper .responsive-card .card-info .card-info-section-wrapper #cardSection2 {
+  text-align: center;
 }

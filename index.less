@@ -176,6 +176,7 @@ body {
 							}
 							
 							button{
+								cursor: pointer;
 							    display: inline-block;
 							    width: 95%;
 							    height: 50px;
@@ -227,6 +228,79 @@ body {
 						&.current-section {
 							display:block;
 						}
+						
+						.blog-iframe {
+							border:none;
+							
+							position:absolute;
+							top:0px;
+							bottom:0px;
+							left:0px;
+							right:0px;
+							
+							height:200%;
+							width:200%;
+							
+							-moz-transform: scale(0.5, 0.5);
+							 -webkit-transform: scale(0.5, 0.5); 
+							 -o-transform: scale(0.5, 0.5);
+							 -ms-transform: scale(0.5, 0.5);
+							 transform: scale(0.5, 0.5); 
+							 -moz-transform-origin: top left;
+							 -webkit-transform-origin: top left;
+							 -o-transform-origin: top left;
+							 -ms-transform-origin: top left;
+							 transform-origin: top left;
+						}
+					}
+					
+					#cardSection1 {
+						color:white;
+						font-family: "Raleway";
+						a{
+							color:white;
+							font-weight: bold;
+							text-decoration: none;
+							&:hover{
+								text-decoration: underline;
+							}
+						}
+						.quote{
+							font-size: 28px;
+							display:block;
+							padding:30px;
+							text-align: center;
+							.small{
+								font-size: 14px;
+								font-family: "Open Sans";
+							}
+							.big {
+								font-size: 20px;
+								font-family: "Raleway";
+							}
+						}
+						.job{
+							display:block;
+							padding:10px 30px;
+							font-size: 14px;
+							text-align: center;
+						}
+						.study{
+							display:block;
+							padding:10px 30px;
+							font-size:14px;
+							text-align: center;
+						}
+						.hobby{
+							display:block;
+							padding:10px 30px;
+							font-size:14px;
+							text-align: center;
+						}
+					}
+					
+					#cardSection2 {
+						text-align:center;
 					}
 				}
 			}
