@@ -1,4 +1,4 @@
-JSaiTeja.com
+www.tsjamm.com
 ========
 
-My Personal Website www.jsaiteja.com
+This is my personal blog site.
