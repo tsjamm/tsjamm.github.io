@@ -123,7 +123,7 @@ gulp.task('serve', ['build'], function() {
     gulp.watch(path.join(paths.src, paths.server, 'server.js'), ['processServer']).on('change', function() { server.start.bind(server) });
 });
 
-gulp.task('deploy', function() {
+gulp.task('deploy', ['build'], function() {
     return gulp.src(path.join(paths.build, paths.public, '**/*'))
       .pipe(ghPages({
           branch:"master"
