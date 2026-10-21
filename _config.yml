@@ -1,0 +1,23 @@
+title: Sai Teja
+description: Thoughts on software, technology, and life.
+url: "https://saiteja.blog"
+baseurl: ""
+
+author:
+  name: Sai Teja Jammalamadaka
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - README.md
