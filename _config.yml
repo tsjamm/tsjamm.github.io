@@ -22,3 +22,4 @@ exclude:
   - Gemfile.lock
   - .gitignore
   - README.md
+  - vendor

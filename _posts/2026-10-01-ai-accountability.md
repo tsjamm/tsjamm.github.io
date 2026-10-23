@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI gave you lightning fast code. But who's accountable when something goes wrong?"
-date: 2026-10-22
+date: 2026-10-01
 description: "AI moves the efficiency gains, but humans absorb the risk. A look at accountability, estimation, and what we lose when we outsource our judgment."
 ---
 

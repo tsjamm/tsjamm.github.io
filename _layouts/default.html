@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -16,7 +22,25 @@
       <nav>
         <a href="/">Blog</a>
         <a href="/about">About</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 3 A9 9 0 0 1 12 21 Z" fill="currentColor" stroke="none"/>
+          </svg>
+        </button>
       </nav>
+
+      <script>
+        (function() {
+          document.getElementById('themeToggle').addEventListener('click', function() {
+            var current = document.documentElement.getAttribute('data-theme');
+            var nowDark = current === 'dark' || (!current && window.matchMedia('(prefers-color-scheme: dark)').matches);
+            var next = nowDark ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+          });
+        })();
+      </script>
     </div>
   </header>
 
